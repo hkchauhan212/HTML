@@ -1,30 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- META TAGS -->
+
+    <!-- <meta cng proper rendering of characters. <meta name="description" content="A brief description of the webpage">:
+            Provides a concise description of the page's content.
+        <meta name="keywords" content="keyword1, keyword2, keyword3">: Specifies
+            relevant keywords for search engines (not as impactful as it used to be).
+        <meta name="author" content="Author's Name">: Indicates the author of theharset="UTF-8">: Specifies the character
+            encoding for the webpage,
+            ensuri 
+        <meta name="robots" content="index, follow">: Instructs search engine
+            robots whether to index and follow links on the page.
+    -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design</title>
-    <style>
-        a{
-            width: 150px;
-            height: 150px;
-            background-color: aqua;
-            color: blue;
-            padding: 15px;
-            box-sizing: border-box;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-    </style>
+    <title>sementic</title>
 </head>
+
 <body>
-    <p>This Is a Sample Code for html.</p>
-    <h1>heading 1</h1>
-    <h2>heading 2</h2>
-    <h3>heading 3</h3>
-    <h4>heading 4</h4>
-    <h5>heading 5</h5>
-    <h6>heading 6</h6>
-    <a href="https://github.com/hkchauhan212/HTML" target="_blank">Github link</a>
+
+    <!-- Semantic elements = elements with a meaning.
+    A semantic element clearly describes its meaning to both the
+    browser and the developer. -->
+
+    <!-- <header> — Represents the introductory content for a section, article, or
+                entire web page. Ex. Contains Logo, site title etc.
+        <nav> — Navigation menu links would all be placed in a <nav> tag.
+        <main> — The body of a page should go in the <main> tag. There should be
+            only one per page.
+        <article> — Represents an independent article on a web page. For example, a
+            blog post.
+        <section> — Represent a way of grouping together nearby content of a similar
+            theme.
+        <aside> — Represents the content that’s less important. It’s mostly used for
+            sidebars (ads).
+        <footer> — Represent the base of a page or section. It might include contact
+            information and some site navigation. -->
+
+
+    <!-- Single <main> Tag: As a best practice, use only one 
+            <main> tag per HTML page. The
+            <main> tag should encapsulate the primary content of your webpage, excluding
+                    headers, footers, and sidebars.
+                    Use Headers Wisely: While you can use multiple 
+            <header> tags, make sure they'reappropriately placed within semantic elements like <article>, <section>, or as
+                        introductory content for the whole page. Each <header> should provide relevant context.
+                        Avoid Overuse: Use semantic elements purposefully and avoid overusing them. Choose
+                        elements that accurately represent your content's structure and hierarchy.
+                        Overusing them may lead to confusion and diluted semantics. -->
+
+
+    <!-- Understand Nesting: Understand the hierarchy and nesting rules of semantic elements.
+            For instance, <article> and <section> can contain <header>, <footer>, and other
+                content, but nesting them should reflect logical relationships.
+                Enhance Accessibility: Semantic elements greatly improve web accessibility. Use them
+                to create a clear structure for assistive technologies. Ensure that your content
+                remains meaningful even if CSS or other styling is disabled. -->
+
+    <!-- NON_SEMANTIC -->
+
+    <!-- <div></div>
+
+    <div></div>
+
+    <div></div>
+                        <div></div>
+    <div></div>
+
+    <div></div> -->
+
+
+
+
+    <!-- SEMANTIC ELEMENT -->
+
+    <!-- <header></header>
+
+    <nav></nav>
+
+    <section></section>
+                            <aside></aside>
+    <article></article>
+
+    <footer></footer> 
+
+    -->
+
+    <header>
+        <div">
+            <a href="https://chat.openai.com/">
+                <img src="img/Nature03.png" alt="natural img" style="width: 500px; height: auto;">
+            </a>
+            </div>
+            <nav>
+                <ul style="display: flex; gap: 50px;">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">COntect</a></li>
+                    <li><a href="#">help</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repudiandae
+                eaque corrupti? Laudantium
+                autem illo numquam quibusdam neque odit obcaecati nihil repudiandae at
+                suscipit laboriosam aperiam
+                impedit ea vitae architecto quo incidunt blanditiis possimus mollitia enim,
+                earum sapiente maxime quam
+                voluptatum? Corrupti nesciunt tempora non eaque quidem molestias consectetur
+                cum.
+            </p>
+            <button>See My work</button>
+            <a href="https://youtu.be/MSICFljRcb4?si=n6VnmblY5pLt0Kpx" target="_blank"><button>visit
+                    youtube
+                    css</button></a>
+        </section>
+        <article>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quos quia
+                totam rerum distinctio beatae
+                ipsum consequuntur soluta, laboriosam sunt quae deleniti et? Illo quia earum
+                magni provident aut quae
+                odio, enim nemo aperiam suscipit nesciunt soluta deleniti, quos quidem at
+                reiciendis beatae sunt alias.
+                Sed optio totam aperiam expedita.
+            </p>
+        </article>
+        <aside>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+                voluptate veniam aspernatur
+                doloremque obcaecati aut tempora aliquam accusamus dolorum. Reiciendis totam
+                cum corporis perferendis
+                ratione consequuntur minima aut vero. Quae dolore eos pariatur omnis itaque
+                in velit commodi sequi
+                accusamus tempore? Commodi at minima odio eos numquam rem totam ipsam!</p>
+        </aside>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Chauhan Harik.All right reserverd &hearts;
+        </p>
+    </footer>
+
+    <!-- All elements in Mozila.. -->
+    <!-- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"></a> -->
 </body>
+
 </html>
