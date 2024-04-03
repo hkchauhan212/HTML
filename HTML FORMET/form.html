@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .data {
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: red;">Enter Your Data</h1>
+    <form class="form">
+        <div class="data">
+            <label for="username">usernam:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username">
+        </div>
+        <div class="data">
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div class="data">
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your password">
+        </div>
+        <div class="data">
+            <label for="textarea">textarea:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="7"></textarea>
+        </div>
+        <div class="data">
+            <label for="gender">gender</label>
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="other">other
+        </div>
+        <div class="data">
+            <label for="Phone No">Phone No:</label>
+            <input type="number" id="Phone No" name="Phone No" max="10" min="1" value="1" />
+        </div>
+        <div class="data">
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Bhart">Bhart</option>
+                <option value="Bhart Vars">Bhart Vars</option>
+                <option value="Hindustan">Hindustan</option>
+            </select>
+        </div>
+        <div class="data">
+            <label for="country">select your contry</label>
+            <input type="text" id="countryies" name="country" list="countries" placeholder="INDIA" />
+            <datalist id="countries">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </datalist>
+        </div>
+
+        <input type="submit" value="login">
+
+    </form>
+
+
+    <!-- The <form> tag is used to create an HTML form for user input.
+        
+        The <input> HTML element is used to create interactive controls
+        for web-based forms to accept data from the user. We must write
+        inside the tag. -->
+
+</body>
+
+</html>
