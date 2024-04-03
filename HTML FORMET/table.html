@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tables</title>
+    <style>
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            background-color: rgba(248, 11, 11, 0.699);
+            color: rgba(255, 255, 255, 0.84);
+        }
+
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML TIME TABLE</h1>
+    <table>
+        <caption style="color: black;">THIS IS A CAPTION (----).</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>username</th>
+                <th>password</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>binod</td>
+                <td>thapa</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>harik</td>
+                <td>chauhan</td>
+                <td>Charadva</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">count:2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <hr><br>
+
+    <table>
+        <caption style="color: black;"> ---- Time Table ----</caption>
+        <thead>
+            <tr>
+                <th colspan="7">Time table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">Hours</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>science</td>
+                <td>science</td>
+                <td>science</td>
+                <td>science</td>
+                <td>science</td>
+            </tr>
+            <tr>
+                <td colspan="6">Lunch</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td rowspan="2">GAMES</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- HTML tables allow web developers to arrange data into
+    rows and columns. We must write everything inside the table tag.
+
+    <table> Element: Defines an HTML table, which is used to organize
+        data into rows and columns.
+
+    <tbody> Element: Groups the main content (data rows) of an HTML table.
+
+    <thead> Element: Groups the header content (table headings) of an HTML table.
+
+    <th> Element: Defines a header cell (table heading) within a table.
+
+    <td> Element: Represents a data cell within an HTML table.
+
+    <tr> Element: Defines a row within an HTML table. -->
+
+</body>
+
+</html>
